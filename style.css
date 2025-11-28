@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 970px; /*940px ширина контейнеру + 2 падінги по 15рх, тому 970 рх*/
+  padding: 0 15px;
+  margin: 0 auto; /*центрувати контейнер*/
+}
+
+p+p{
+  color: #6A859C;
+  line-height: 1.8; /*по макету line-height 25px і шрифт 14рх, щоб зробити більш гнучким висоту строки ділимо висоту на шрифт, і тепер якщо шрифт змінюється на 16рх то і висота буде підлаштовуватися. Тобто цей параметр стає грунким*/
+}
+
+.header { 
+  padding: 20px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #69B9FF;
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.header__nav ul{
+  display: flex;
+}
+
+.header__nav li + li{
+  margin-left: 40px;
+}
+
+.header__nav a {
+  color: #676770;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.header__nav a:hover {
+  color: #0082F3;
+}
+
+.header__nav a:active {
+  color: #0074D8;
+}
